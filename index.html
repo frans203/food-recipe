@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Recipe</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="all">
+      <div class="nav">
+        <span class="nav-logo">Food Recipe</span>
+
+        <form class="search">
+          <input
+            type="text"
+            class="field_search"
+            placeholder="Search over 1,000,000 recipes..."
+          />
+
+          <!-- <input type="submit" value="search" /> -->
+          <button class="btn btn_search">
+            <span>Search</span>
+          </button>
+        </form>
+        <div class="nav-list">
+          <div class="nav-item">
+            <button class="nav-btn btn-ar">
+              <span>Add recipe</span>
+            </button>
+          </div>
+          <div class="nav-item">
+            <button class="nav-btn btn-bm">
+              <span>Bookmarks</span>
+            </button>
+
+            <div class="bookmarks">
+              <ul class="bookmarks-list">
+                <div class="message">
+                  <div>
+                    <svg></svg>
+                  </div>
+                  <p>
+                    No bookmarks yet. Your bookmarks will be displayed here.
+                  </p>
+                </div>
+
+                <!-- <li class="preview">
+                <a class="preview-link" href="#">
+                  <figure>
+                    <img src="#" />
+                  </figure>
+
+                  <div class="preview-data">
+                    <h4 class="preview-name"></h4>
+                    <p class="preview-publisher"></p>
+                  </div>
+                </a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+
+          <button class="nav-btn menu-btn">
+            <i class="fas fa-bars fa-2x"></i> <span class="sr-only">Menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="search-results">
+        <ul class="results">
+          <!-- <li class="preview">
+              <a class="preview-link--active">
+                <figure class="preview-fig">
+                  <img src="" alt="" />
+                </figure>
+
+                <div class="preview-data">
+                  <h4></h4>
+                  <p></p>
+                  <div class="preview-user-generated">
+                    <svg>
+                      <use href="./img/icons.svg#icon-user"></use>
+                    </svg>
+                  </div>
+                </div>
+              </a>
+            </li> -->
+        </ul>
+
+        <div class="pagination">
+          <!-- <button class="btn-prev">
+              <svg class="search-icon">
+                <use href="./img/icons.svg#icon-arrow-left"></use>
+              </svg>
+              <span> Page </span>
+            </button>
+
+            <button class="btn-next">
+              <svg class="search-icon">
+                <use href="./img/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button> -->
+        </div>
+
+        <p class="copyright">
+          &copy; Copyright by
+          <a class="copy-link" href="#">Francisco Santana</a>. For Portofolio.
+        </p>
+      </div>
+      <div class="recipe">
+        <div class="error">
+          <div></div>
+          <span>Start By searching for a recipe</span>
+        </div>
+        <!-- <div class="message">
+          <div>
+            <svg>
+              <use href="./img/icons.svg#icon-smile"></use>
+            </svg>
+          </div>
+          <p>Start by searching for a recipe or an ingredient. Have fun!</p>
+        </div> -->
+
+        <!-- <div class="spinner">
+          <svg>
+            <use href="./img/icons.svg#icon-loader"></use>
+          </svg>
+        </div> -->
+
+        <!-- <div class="error">
+          <div>
+            <svg>
+              <use href="./img/icons.svg#icon-alert-triangle"></use>
+            </svg>
+          </div>
+          <span>No recipes found. Please try again</span>
+        </div> -->
+
+        <!-- <figure class="recipe-fig">
+          <img src="./img/test-1.png" alt="" />
+          <h1 class="recipe-fig-h">Recipe Title</h1>
+        </figure>
+
+        <div class="recipe-details">
+          <div class="recipe-info">
+            <svg class="recipe__info-icon">
+              <use href="./img/icons.svg#icon-clock"></use>
+            </svg>
+            <span class="recipe-info--time">45</span>
+            <span class="recipe-info-minutes">minutes</span>
+          </div>
+
+          <div class="recipe-info">
+            <svg class="recipe-info--icon">
+              <use href="./img/icons.svg#icon-users"></use>
+            </svg>
+
+            <span class="recipe-info--number-serving">4</span>
+            <span class="recipe-info-servings">Servings</span>
+            <div class="recipe-info-btns">
+              <button class="recipe-serv recipe-minus-serv">
+                <svg>
+                  <use href="./img/icons.svg#icon-minus-circle"></use>
+                </svg>
+              </button>
+
+              <button class="recipe-serv recipe-plus-serv">
+                <svg>
+                  <use href="./img/icons.svg#icon-plus-circle"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="recipe-user-genereted">
+            <svg>
+              <use href="./img/icons.svg#icon-user"></use>
+            </svg>
+          </div>
+
+          <button class="recipe-serv btn-round">
+            <svg class="">
+              <use href="./img/icons.svg#icon-bookmark-fill"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="recipe-ingredients">
+          <h2 class="h-ingredients">Recipe ingredients</h2>
+
+          <ul class="recipe-ingredient-list">
+            <li class="recipe-ingredient">
+              <svg class="recipe-icon">
+                <use href="./img/icons.svg#icon-check"></use>
+              </svg>
+              <div class="recipe-quantity">1000</div>
+              <div class="recipe-description">
+                <span class="recipe-unit">g</span>
+
+                <span class="recipe-text"> pasta </span>
+              </div>
+            </li>
+
+            <li class="recipe-ingredient">
+              <svg class="recipe-icon">
+                <use href="./img/icons.svg#icon-check"></use>
+              </svg>
+              <div class="recipe-quantity">500</div>
+              <div class="recipe-description">
+                <span class="recipe-unit">g</span>
+
+                <span class="recipe-text"> ketchup </span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="recipe-directions">
+          <h2 class="h-ingredients">How to cook it</h2>
+          <p>
+            This recipe was carefully designed and tested by Simply Recipes.
+            Please check out directions at their website.
+          </p>
+
+          <a class="btn recipe-btn" href="" target="_blank">
+            <span>Directions</span>
+            <svg class="search-icon">
+              <use href="./img/icons.svg#icon-arrow-right"></use>
+            </svg>
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div class="add-recipe-window hidden">
+      <button class="close-modal">&times;</button>
+      <form class="form upload">
+        <div class="form-column form-recipe">
+          <h3 class="form-h">Recipe Data</h3>
+          <label>Title</label>
+          <input type="text" value="TEST12" required name="title" />
+          <label>URL</label>
+          <input type="text" value="TEST12" required name="url" />
+          <label>image URL</label>
+          <input type="text" value="TEST12" required name="image" />
+          <label>Publisher</label>
+          <input type="text" value="TEST12" required name="publisher" />
+          <label>Prep time</label>
+          <input type="number" value="12" required name="prep" />
+          <label>Servings</label>
+          <input type="text" value="12" required name="servings" />
+        </div>
+
+        <div class="form-column form-ingredients">
+          <h3 class="form-h">Ingredients</h3>
+          <label>Ingredient 1</label>
+          <input
+            value="0.5,kg,Rice"
+            type="text"
+            required
+            name="ingredient-1"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+
+          <label>Ingredient 2</label>
+          <input
+            value="0.5,kg,Rice"
+            type="text"
+            name="ingredient-2"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+
+          <label>Ingredient 3</label>
+          <input
+            value="0.5,kg,Rice"
+            type="text"
+            name="ingredient-3"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+
+          <label>Ingredient 4</label>
+          <input
+            value="0.5,kg,Rice"
+            type="text"
+            name="ingredient-4"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+
+          <label>Ingredient 5</label>
+          <input
+            value="0.5,kg,Rice"
+            type="text"
+            name="ingredient-5"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+
+          <label>Ingredient 6</label>
+          <input
+            type="text"
+            name="ingredient-6"
+            placeholder="Format: 'Quantity,Unit,Description'"
+          />
+        </div>
+
+        <button class="btn upload-btn">
+          <svg>
+            <use href="./img/icons.svg#icon-upload-cloud"></use>
+          </svg>
+          <span>Upload</span>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
