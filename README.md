@@ -1,4 +1,4 @@
-# food Recipe
+# food Recipe (project 7)
 
 Recipe application with custom recipe uploads.
 You can search for any recipe that you want.
