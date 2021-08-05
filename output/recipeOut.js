@@ -77,7 +77,7 @@ class outputRecipe extends Output {
       .join(" ")}
       
 
-    
+
     </ul>
   </div>
 
