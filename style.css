@@ -637,7 +637,7 @@ input {
   .all {
     padding-top: 30px;
     margin: auto;
-    min-width: 40rem;
+    min-width: 30rem;
     min-height: 120rem;
     grid-template-columns: 2fr;
     gap: 10px;
