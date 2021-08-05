@@ -4,13 +4,11 @@
   margin: 0;
   padding: 0;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
-
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -47,7 +45,6 @@ body {
   font-family: "Lobster", cursive;
   font-size: 3rem;
 }
-
 .nav {
   grid-area: head;
 
@@ -56,7 +53,6 @@ body {
   justify-content: space-between;
   padding: 0 12px;
 }
-
 .btn-small,
 .btn-small:link,
 .btn-small:visited,
@@ -75,7 +71,6 @@ body {
   border-radius: 20rem;
   transition: all 0.3s;
 }
-
 .btn {
   padding: 12px;
   font-size: 18px;
@@ -86,7 +81,6 @@ body {
   height: 2rem;
   fill: currentColor;
 }
-
 .btn-small:hover,
 .btn:hover {
   transform: scale(1.1);
@@ -166,7 +160,6 @@ body {
   opacity: 1;
   visibility: visible;
 } */
-
 .changeBookmarks {
   opacity: 1;
   visibility: visible;
@@ -201,9 +194,7 @@ body {
   font-size: 1.8rem;
   line-height: 1.5;
 }
-
 /* preview */
-
 .preview {
   overflow: hidden;
 
@@ -221,12 +212,10 @@ body {
   border-right: 1px solid #ccc;
   text-decoration: none;
 }
-
 .preview-link:hover {
   background: rgb(219, 218, 216);
   transform: translateY(-4px);
 }
-
 .preview-fig {
   width: 50px;
   border-radius: 50%;
@@ -258,7 +247,6 @@ body {
   object-fit: cover;
   transition: all 0.3s;
 }
-
 .preview-data {
   display: grid;
   width: 100%;
@@ -315,7 +303,6 @@ body {
   padding: 0 3.5rem;
   /*  */
 }
-
 .pagination::after {
   content: "";
   display: table;
@@ -345,26 +332,22 @@ body {
 .btn--inline span {
   margin: 0 0.4rem;
 }
-
 .btn-next {
   float: right;
 }
 .btn-prev {
   float: left;
 }
-
 /* LOADING SPINNER */
 .spinner {
   margin: 5rem auto;
   text-align: center;
 }
-
 .spinner svg {
   width: 70px;
   fill: rgba(203, 78, 78, 1);
   animation: rotate 2s infinite linear;
 }
-
 @keyframes rotate {
   0% {
     transform: rotate(0);
@@ -373,7 +356,6 @@ body {
     transform: rotate(360deg);
   }
 }
-
 /* copyright */
 .copyright {
   color: #ccc;
@@ -381,7 +363,6 @@ body {
   padding: 0 12px;
   margin-top: 15px;
 }
-
 /* recipe */
 .recipe {
   background: rgb(255, 255, 255);
@@ -488,7 +469,6 @@ body {
   padding: 5px;
   margin-right: 50px;
 }
-
 .btn-round svg {
   fill: white;
   transition: all 0.5s;
@@ -515,7 +495,6 @@ body {
   align-items: center;
   font-size: 15px;
 }
-
 .recipe-directions {
   padding: 40px;
   background: rgb(248, 244, 244);
@@ -550,7 +529,6 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 20px;
 }
-
 /* upload form */
 .close-modal {
   float: right;
@@ -602,12 +580,10 @@ input {
   grid-column: 1/-1;
   justify-self: center;
 }
-
 /* special */
 .hidden {
   display: none;
 }
-
 /* RESPONSIVITY */
 @media screen and (min-width: 1030px) {
   .nav-item {
@@ -672,3 +648,5 @@ input {
     margin-left: 80px;
   }
 }
+
+/*# sourceMappingURL=index.f556d9ac.css.map */
